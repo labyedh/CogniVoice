@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+python-multipart
+requests # To send webhooks back to Flask
+
+# Your existing ML dependencies
+torch
+joblib
+librosa
+numpy
+pydub
+pyannote.audio
+soundfile
+matplotlib
+demucs

@@ -1,0 +1,9 @@
+frontend/node_modules
+*.ckpt
+*.pth
+*.pkl
+*.db
+.env
+.env_ai
+.env.local
+*/__pycache__
