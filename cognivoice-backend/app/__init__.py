@@ -8,10 +8,16 @@ from flask_cors import CORS
 def create_app(config_class=Config):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_object(config_class)
+    from flask_cors import CORS
+
     CORS(
-        app,
-        supports_credentials=True,
+    app,
+    resources={r"/*": {"origins": ["http://localhost:5173", "https://yourdomain.com"]}},
+    supports_credentials=True,
+    allow_headers=["Content-Type", "Authorization"],
+    methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"]
     )
+
 
     try:
         os.makedirs(app.instance_path)

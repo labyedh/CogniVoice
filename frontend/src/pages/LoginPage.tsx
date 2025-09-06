@@ -21,8 +21,13 @@ const LoginPage: React.FC = () => {
     setIsLoading(true);
 
     try {
-      await login(formData.email, formData.password);
-      navigate('/analysis');
+      const user = await login(formData.email, formData.password);
+      if (user.role === 'admin') {
+        navigate('/admin/dashboard');
+      } else {
+        navigate('/analysis');
+      }
+      
     } catch (err) {
       setError('Invalid email or password. Please try again.');
     } finally {

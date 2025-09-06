@@ -11,8 +11,8 @@ export interface User {
   
   export interface AuthContextType {
     user: User | null;
-    login: (email: string, password: string) => Promise<void>;
-    register: (userData: RegisterData) => Promise<void>;
+    login: (email: string, password: string) => Promise<User>;     // <- return User
+    register: (data: RegisterData) => Promise<User>;  
     logout: () => void;
     isLoading: boolean;
     updateUserContext: (updatedUserData: Partial<User>) => void; // <-- THIS LINE IS REQUIRED
