@@ -26,11 +26,13 @@ CogniVoice is a sophisticated full-stack web application designed for advanced v
 
 ## 🖥️ Screenshots
 
+![Screenshot of CogniVoice Dashboard](.github/assets/cognivoice.png)
+_CogniVoice Landing Page: Providing an overview of our solution._
 
-![Screenshot of CogniVoice Dashboard](.github/assets/screenshot-dashboard.png)
+![Screenshot of CogniVoice Dashboard](.github/assets/dashboard.png)
 _CogniVoice Dashboard: Providing an overview of user activity and voice sessions._
 
-![Screenshot of Voice Interaction Interface](.github/assets/screenshot-voice-interaction.png)
+![Screenshot of Voice Interaction Interface](.github/assets/voice.png)
 _Voice Interaction: Demonstrating real-time speech processing and feedback._
 
 ## 🛠️ Tech Stack
